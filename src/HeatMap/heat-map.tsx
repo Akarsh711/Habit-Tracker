@@ -21,7 +21,7 @@ function HeatMap({ values }: HeatMapProps) {
                     showWeekdayLabels={true}
                     showMonthLabels={true}
                     values={values}
-                    classForValue={(value: { count: number } | null) => {
+                    classForValue={(value: any) => {
                         if (!value) {
                             return 'color-empty';
                         }
